@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void scheduleWork() {
-        // Create a WorkRequest with a 30-second delay
+        // Create a WorkRequest with a 10-second delay
         WorkRequest notificationWork = new OneTimeWorkRequest.Builder(NotificationWorker.class)
                 .setInitialDelay(10, TimeUnit.SECONDS)
                 .build();
